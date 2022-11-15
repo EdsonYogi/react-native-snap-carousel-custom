@@ -54,9 +54,7 @@ export default class Carousel extends Component {
     autoplayDelay: PropTypes.number,
     autoplayInterval: PropTypes.number,
     callbackOffsetMargin: PropTypes.number,
-    containerCustomStyle: ViewPropTypes
-      ? ViewPropTypes.style
-      : View.propTypes.style,
+    containerCustomStyle: stylePropType,
     contentContainerCustomStyle: stylePropType,
     enableMomentum: PropTypes.bool,
     enableSnap: PropTypes.bool,
