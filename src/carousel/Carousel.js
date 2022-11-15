@@ -7,7 +7,6 @@ import {
   Platform,
   ScrollView,
   View,
-  ViewPropTypes,
 } from "react-native";
 import PropTypes from "prop-types";
 import shallowCompare from "react-addons-shallow-compare";
@@ -172,7 +171,7 @@ export default class Carousel extends Component {
     this._ignoreNextMomentum = false;
 
     // Warnings
-    if (!ViewPropTypes) {
+    if (!stylePropType) {
       console.warn(
         "react-native-snap-carousel: It is recommended to use at least version 0.44 of React Native with the plugin"
       );
